@@ -1,0 +1,29 @@
+{
+  "year": 2019,
+  "slabs": [
+    {
+      "min": 0,
+      "max": 100000,
+      "percent": 0
+    },
+    {
+      "min": 100000,
+      "max": 600000,
+      "percent": 10
+    },
+    {
+      "min": 600000,
+      "max": 1200000,
+      "percent": 20
+    },
+    {
+      "min": 1200000,
+      "percent": 30
+    }
+  ],
+  "investmentLimit": 150000,
+  "cessLimit": 500000,
+  "cessPercent": 2,
+  "ageLimit": 60,
+  "ageExemptionAmt": 50000
+}
