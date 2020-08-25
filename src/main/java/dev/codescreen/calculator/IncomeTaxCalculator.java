@@ -1,5 +1,6 @@
 package dev.codescreen.calculator;
 
+import dev.codescreen.constants.AppConstants;
 import dev.codescreen.entity.TaxDetails;
 import dev.codescreen.entity.TaxRules;
 import dev.codescreen.entity.TaxSlab;
@@ -46,6 +47,6 @@ public class IncomeTaxCalculator {
         double total_tax = income_tax + cess;
 
         double[] output = { income_tax, cess, total_tax };
-        return Arrays.stream(output).mapToObj(String::valueOf).collect(Collectors.joining(","));
+        return Arrays.stream(output).mapToObj(String::valueOf).collect(Collectors.joining(AppConstants.DELIMITER));
     }
 }

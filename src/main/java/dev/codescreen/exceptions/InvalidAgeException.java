@@ -1,7 +1,7 @@
 package dev.codescreen.exceptions;
 
-public class InsufficientParametersException extends Exception {
-    public InsufficientParametersException(String message) {
+public class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
         super(message);
     }
 

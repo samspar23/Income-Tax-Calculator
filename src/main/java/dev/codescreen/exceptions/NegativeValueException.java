@@ -1,7 +1,7 @@
 package dev.codescreen.exceptions;
 
-public class InsufficientParametersException extends Exception {
-    public InsufficientParametersException(String message) {
+public class NegativeValueException extends Exception {
+    public NegativeValueException(String message) {
         super(message);
     }
 
