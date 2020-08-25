@@ -10,8 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * This class is the main controller for the income tax calculator application.
+ * Accepts input from the command line or a file provided by the user.
+ * Validates the input and loads the tax calculation rules for the given year.
+ * Calculates the income tax and displays the output on the command line.
+ */
 public class IncomeTaxCalculatorApplication {
-
 	public static void main(String[] args) throws Exception {
 		InputReader inputReader = new InputReader();
 		List<List<String>> inputParams = new ArrayList<>();

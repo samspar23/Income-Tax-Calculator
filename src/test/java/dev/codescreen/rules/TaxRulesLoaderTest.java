@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 public class TaxRulesLoaderTest {
     @Test
     public void getTaxRulesForYear() {
+        // should read file containing rules for the given year and return a TaxRules entity
         try {
             TaxRulesLoader rulesLoader = new TaxRulesLoader();
             TaxRules tr = rulesLoader.getTaxRulesForYear(2019);

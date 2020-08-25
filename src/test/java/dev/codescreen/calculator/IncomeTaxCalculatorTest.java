@@ -13,6 +13,7 @@ import static org.junit.Assert.*;
 public class IncomeTaxCalculatorTest {
     @Test
     public void calculate1() {
+        // should correctly calculate income tax for given tax details and tax rules(no age exemption)
         try {
             TaxDetails td = new TaxDetails();
             td.setYear(2019);
@@ -67,6 +68,7 @@ public class IncomeTaxCalculatorTest {
 
     @Test
     public void calculate2() {
+        // should correctly calculate income tax for given tax details and tax rules(with age exemption)
         try {
             TaxDetails td = new TaxDetails();
             td.setYear(2020);

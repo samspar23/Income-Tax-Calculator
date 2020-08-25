@@ -13,6 +13,7 @@ import static org.junit.Assert.*;
 public class InputReaderTest {
     @Test
     public void readFile() {
+        // should read file at the provided path and create a list of records
         try {
             File file = new File("src/test/resources/tax.txt");
             InputReader inputReader = new InputReader();
@@ -31,6 +32,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord1() {
+        // should return null if less parameters are passed
         try {
             List<String> record = new ArrayList<>();
             InputReader inputReader = new InputReader();
@@ -44,6 +46,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord2() {
+        // should return null if invalid year is passed
         try {
             List<String> record = new ArrayList<>();
             record.add("2017");
@@ -62,6 +65,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord3() {
+        // should return null if incorrectly formatted data is passed
         try {
             List<String> record = new ArrayList<>();
             record.add("2019");
@@ -80,6 +84,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord4() {
+        // should return null if invalid age is passed
         try {
             List<String> record = new ArrayList<>();
             record.add("2019");
@@ -98,6 +103,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord5() {
+        // should return null if -ve value for income is passed
         try {
             List<String> record = new ArrayList<>();
             record.add("2019");
@@ -116,6 +122,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord6() {
+        // should return null if -ve value for investment is passed
         try {
             List<String> record = new ArrayList<>();
             record.add("2019");
@@ -134,6 +141,7 @@ public class InputReaderTest {
 
     @Test
     public void getObjectFromRecord7() {
+        // should return TaxDetails object if correct parameters are passed
         try {
             List<String> record = new ArrayList<>();
             record.add("2019");
@@ -155,6 +163,7 @@ public class InputReaderTest {
 
     @Test
     public void getRecordFromArguments1() {
+        // should return an empty list if less parameters are passed
         try {
             String[] args = { "2019", "35" };
             InputReader inputReader = new InputReader();
@@ -168,6 +177,7 @@ public class InputReaderTest {
 
     @Test
     public void getRecordFromArguments2() {
+        // should return a list of same size as number of arguments passed
         try {
             String[] args = {"2019", "35", "1000000", "100000"};
             List<String> expected = Arrays.asList(args);
