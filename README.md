@@ -1,25 +1,4 @@
-## Important Points About Coding:
-- The submission must have full unit test coverage.
-- Design the solution considering future use case.
-- Code as if writing for production, avoid if-else waterfalls.
-- You would be asked to enhance the same solution for in-office interview.
-- Ideally it should take 2-3 days to implement, if you need more time do inform us upfront.
-- Do not remove anything that is already present in build.gradle, as it helps us automate a few things for evaluation
-
-## Important Points about the exercise:
-- Please do not share the coding problem or solution with anyone. 
-- Avoid publishing problem statement, and your code in any public forum like Github.
-- Please do not copy paste solutions from any website. We deploy plagiarism tools to check code submissions. 
-- We value integrity the most in our potential candidates. Any breach of above points would immediately disqualify you from any future considerations.
-
-
-# Medly Coding Test: Income Tax Calculator
-
-In the country of **Coderland**, the annual income tax for an individual is calculated based on their total earnings and investments for a given financial year according to rules that are predefined for a financial year.
-
-### Notes
-- Luckily, Coderland's Financial Year is aligned to Calendar Year i.e. Jan-Dec.
-- Coincidentally, Coderland's Currency is INR (₹) and follows [Indian Numbering System](https://en.wikipedia.org/wiki/Indian_numbering_system)
+Income Tax Calculator
 
 ### Rules
 Here are rules for last three consecutive years:
@@ -130,14 +109,8 @@ tax,cess,total
 
 Output should be int/float numbers only, no commas, no currency symbols etc.
 
-**Good to have**: CLI Variation 
+CLI Variation 
 
 ```
 tax-calc --year 2019 --income 230000 --investment 75000 --age 40
 ```
-
-## Submitting your solution
-
-Please push your changes to the `master branch` of this repository. You can push one or more commits. <br>
-
-Once you are finished with the task, please click the `Complete task` link on <a href="https://app.codescreen.dev/#/codescreentest7dd74aeb-1d36-4dd8-bc99-faaaef1d31fa" target="_blank">this screen</a>.
